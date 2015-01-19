@@ -9,7 +9,7 @@ dataSubsetted$Datetime <- as.POSIXct(datetime)
 
 par(mfrow=c(2,2), oma=c(0,0,2,0))
 plot(dataSubsetted$Global_active_power~dataSubsetted$Datetime, type="l", main="", xlab="", ylab="Global Active Power")
-plot(dataSubsetted$Global_active_power~dataSubsetted$Datetime, type="l", main="", xlab="datetime", ylab="Voltage")
+plot(dataSubsetted$Voltage~dataSubsetted$Datetime, type="l", main="", xlab="datetime", ylab="Voltage")
 plot(dataSubsetted$Sub_metering_1~dataSubsetted$Datetime, type="l", main="", xlab="", ylab="Energy sub metering")
 lines(dataSubsetted$Sub_metering_2~dataSubsetted$Datetime,col='Red')
 lines(dataSubsetted$Sub_metering_3~dataSubsetted$Datetime,col='Blue')
